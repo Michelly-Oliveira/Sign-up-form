@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%) ;
+}
+
+body::before {
+    background: url('../images/bg-intro-mobile.png');
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 100%, 74%);
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.description {
+    width: 400px;
+    margin: 70px auto;
+}
+
+.description__text {
+    margin: 10px auto 0;
+    line-height: 1.6;
+    width: 80%;
+}
+
+.sign-up h3, .sign-up > form {
+    box-shadow: 0 7px hsla(0, 50%, 29%, 0.137);
+    padding: 20px;
+    margin: 0 auto 25px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.sign-up__details {
+    font-weight: 300;
+    background: hsl(248, 32%, 49%);
+}
+
+.sign-up__form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(246, 25%, 77%);
+    min-height: 500px;
+}
+
+.sign-up__form__input {
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 1em;
+    width: 95%;
+}
+
+.sign-up__form__input::placeholder {
+    color: hsl(249, 10%, 26%);
+}
+
+.error-icon {
+    width: 25px;
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+    z-index: -1;
+
+}
+
+.error-msg {
+    color: hsl(0, 100%, 74%) ;
+    font-size: .8em;
+    position: relative;
+    right: 80px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.sign-up__form__btn {
+    background-color: hsl(154, 59%, 51%);
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 5px;
+    width: 95%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sign-up__terms {
+    font-size: .8em;
+    width: 80%;
+}
+
+.show {
+    z-index: 1;
+}
+
+@media(min-width: 1300px) {
+    body {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .description {
+        width: 500px;
+        margin: 70px 0px;
+        text-align: left;
+    }
+
+    .description__title {
+        font-size: 3em;
+    }
+
+    .description__text {
+        width: 100%;
+    }
+
+    .sign-up h3, .sign-up > form {
+        padding: 20px;
+        margin: 0 auto 25px;
+        width: 600px;
+        border-radius: 10px;
+    }  
+
+    .error-icon {
+        left: 240px;
+        bottom: 42px;
+    
+    }
+    
+    .error-msg {
+        right: 170px;
+        bottom: 20px;
+    }
+}
