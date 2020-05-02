@@ -9,12 +9,11 @@ function verifyInputs(e) {
             document.querySelectorAll(`#${field.id}`).forEach(imgAndMsg => imgAndMsg.classList.add('show'));
         } else {
             document.querySelectorAll(`#${field.id}`).forEach(imgAndMsg => imgAndMsg.classList.remove('show'));
+            alert('Operation was successful');
         }
     });
 
     inputs.forEach(input => input.value = '');
-
-    alert('Operation was successful');
 }
 
 submitBtn.addEventListener('click', verifyInputs);
